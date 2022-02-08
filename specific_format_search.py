@@ -1,11 +1,56 @@
-from pathlib import Path
+
+
+
 import os
+from pathlib import Path
 from os import listdir
-import sys
-import fnmatch
 
-path= ""
-pattern= "*.*"
 
-files = fnmatch.filter(os.listdir(path), pattern)
-print(files)
+def getFile(path,pattern):
+    list=[]
+    for files in os.listdir(path):
+        
+        if files.endswith(pattern):             
+           list.append(files)
+    
+    return list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
